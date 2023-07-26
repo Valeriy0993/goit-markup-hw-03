@@ -21,8 +21,6 @@ body {
 
 /*! ///////////////////////// */
 /*! ----------RESET---------- */
-/*! ///////////////////////// */
-/*! ----------RESET---------- */
 
 * {
   margin: 0;
@@ -372,12 +370,16 @@ img {
 /*! ///////////////////////////// */
 /*? ///////////////////////////// */
 
+.portfolio-container {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
 .main-btn-list {
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  padding-top: 96px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   gap: 24px;
 }
 
@@ -401,10 +403,10 @@ img {
   background: var(--color-ocean);
   color: var(--color-white);
   text-align: center;
+  border: 1px solid transparent;
 }
 
-.main-list {
-  padding-bottom: 120px;
+.main-list-item {
 }
 
 .main-list {
@@ -415,6 +417,7 @@ img {
 
 .card-container {
   padding: 32px 16px;
+  border: 1px solid var(--color-cornflower);
 }
 
 .portfolio-title {
@@ -424,6 +427,7 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .portfolio-paragraph {
@@ -432,7 +436,6 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
 }
 
 /*? ///////////////////////////// */
