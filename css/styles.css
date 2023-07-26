@@ -86,11 +86,12 @@ img {
 /*? ////////////////////////// */
 /*? ----------HEADER---------- */
 
+.header-wrap {
+  border-bottom: 1px solid var(--color-cornflower);
+}
+
 .navigation-menu {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-left: 76px;
   gap: 40px;
 }
 
@@ -102,7 +103,6 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--color-cornflower);
 }
 
 .address-list {
@@ -118,6 +118,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .header-logo-studio {
@@ -131,6 +132,9 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-nav-link:hover,
@@ -165,6 +169,8 @@ img {
 
 .hero-section {
   background-color: var(--color-navy-blue);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -173,7 +179,7 @@ img {
   font-size: 56px;
   line-height: 1.07;
   width: 496px;
-  padding-top: 188px;
+  min-width: 496px;
   padding-bottom: 48px;
   margin: 0 auto;
   display: block;
@@ -204,15 +210,16 @@ img {
   background: var(--color-ocean);
 }
 
-.btn-hero-cont {
-  padding-bottom: 188px;
-}
-
 /*! ----------HERO---------- */
 /*! //////////////////////// */
 
 /*? ////////////////////////////// */
 /*? ----------ADVANTAGES---------- */
+
+.advantages-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .advt-title-three {
   color: var(--color-navy-blue);
@@ -232,8 +239,6 @@ img {
 
 .advantages-list {
   display: flex;
-  padding-top: 120px;
-  padding-bottom: 120px;
   gap: 24px;
 }
 
@@ -247,6 +252,10 @@ img {
 /*! //////////////////////////// */
 /*! ----------WE DOING---------- */
 
+.doing-section {
+  padding-bottom: 120px;
+}
+
 .we-doing-title {
   color: var(--color-navy-blue);
   text-align: center;
@@ -254,13 +263,12 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .doing-list {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
 }
 
 .doing-item {
@@ -275,6 +283,8 @@ img {
 
 .section-our-team {
   background-color: var(--color-cloud);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-title {
@@ -284,7 +294,6 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 
@@ -294,7 +303,7 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-top: 32px;
+  text-align: center;
   margin-bottom: 8px;
 }
 
@@ -303,14 +312,13 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
+  text-align: center;
 }
 
 .team-list {
   display: flex;
   text-align: center;
   gap: 24px;
-  padding-bottom: 120px;
 }
 
 .team-list-item {
@@ -322,6 +330,11 @@ img {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+.team-card-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 /*? ----------OUR TEAM---------- */
 /*? //////////////////////////// */
 
@@ -330,6 +343,8 @@ img {
 
 .footer-style {
   background-color: var(--color-navy-blue);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-title {
@@ -340,6 +355,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-title-studio {
@@ -351,14 +368,14 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 17.5px;
+  max-width: 264px;
 }
 
 .footer-container {
   display: block;
   width: 264px;
-  padding-top: 101.5px;
-  padding-bottom: 100px;
+  /* padding-top: 101.5px;
+  padding-bottom: 100px; */
 }
 
 /*! ----------FOOTER---------- */
@@ -370,7 +387,7 @@ img {
 /*! ///////////////////////////// */
 /*? ///////////////////////////// */
 
-.portfolio-container {
+.portfolio-section {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -415,9 +432,10 @@ img {
   gap: 48px 24px;
 }
 
-.card-container {
+.portfolio-card-container {
   padding: 32px 16px;
   border: 1px solid var(--color-cornflower);
+  border-top: none;
 }
 
 .portfolio-title {
